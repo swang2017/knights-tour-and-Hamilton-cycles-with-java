@@ -1,0 +1,40 @@
+
+Homework 3:
+
+Problem 1 - The Knight’s Tour is an ancient and famous chess puzzle. The object is to move a knight from one square to another on an otherwise empty chess board until it has visited every square exactly once. Write a program that solves this puzzle using a depth-first search. It’s best to make the board size variable so that you can attempt solutions for smaller boards. The regular 8×8 board can take years to solve on a desktop computer, but a 5×5 board takes only a minute or so. Refer to the section “Depth-First Search and Game Simulations” in this chapter. It may be easier to think of a new knight being created and remaining on the new square when a move is made. This way, a knight corresponds to a vertex, and a sequence of knights can be pushed onto the stack. When the board is completely filled with knights (the stack is full), you win. In this problem the board is traditionally numbered sequentially, from 1 at the upper-left corner to 64 at the lower-right corner (or 1 to 25 on a 5×5 board). When looking for its next move, a knight must not only make a legal knight’s move, it must also not move off the board or onto an already-occupied (visited) square. If you make the program display the board and wait for a keypress after every move, you can watch the progress of the algorithm as it places more and more knights on the board, and then, when it gets boxed in, backtracks by removing some knights and trying a different series of moves. We’ll have more to say about the complexity of this problem in the next chapter.
+
+
+Problem 2 - Write a program that discovers and displays all the Hamiltonian Cycles of a Weighted, Non-directed graph
+
+
+My name: Sen Wang
+
+Instruction: 
+
+For problem 1:
+
+You need to input the dimension of the board and the start location of the knight tour. 
+
+For problem 2:
+Five vertices with some edges have been entered already, you just run the program. For additional vertices, you have to enter different vertices and edges, the results show the cycles from the five vertices
+             
+Bugs/issues: 
+
+For problem 1:
+
+I finished the program with DFS using stack. There is an apparent bug. For example for the 5X5 board, the first 3-4 lines give correct jumping sequences, but the last 1-2 lines start giving wrong jumping sequence. I was not able to debug it. 
+
+
+For problem 2:
+
+I was able to find one cycle starting from each vertex. However, I was not able to identify all the cycles starting from the same vertex.  
+
+I used DFS to find the cycle. Although I understand I need to check all the adjacent vertices for all the possible routes, I just could not finish it within given time.  
+
+
+       
+Thank you 
+
+Best Regards
+
+Sen 
